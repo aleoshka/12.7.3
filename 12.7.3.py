@@ -5,6 +5,6 @@ skb = per_cent['СКБ']/100*int(money)
 vtb = per_cent['ВТБ']/100*int(money)
 sbr = per_cent['СКБ']/100*int(money)
 total = tkb, skb, vtb, sbr
-deposit = list(map(round, total))
+deposit = list(map(round, total).split)
 print(deposit)
 print('Максимальная сумма, которую Вы можете заработать —', max(deposit))
